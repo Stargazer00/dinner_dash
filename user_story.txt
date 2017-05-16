@@ -1,0 +1,146 @@
+******Action available for an unauthenticated user*******
+*See items*
+As an unauthenticated user
+I want to browse all items and maybe browse items by category
+so I can find my favourite food
+
+*Add items*
+As an unauthenticated user
+I can add an item to my cart
+so that I can place my order later after I logged in
+
+*View added items*
+As an unauthenticated user
+I can view my current added item 
+so that I can preview my cart
+
+*Remove items*
+As an unauthenticated user
+I can remove any added item
+so that I can change my mind
+
+*Modify added item quantity*
+As an unauthenticated user
+I can modify the quantity of any added item
+so that I can adjust the order
+
+*Log in*
+As an unauthenticated user
+I can log in at any time
+so that I can place my order
+
+******Action prohibited for an unauthenticated user*******
+*View other user’s data*
+As an unauthenticated user
+I cannot view another user’s private data
+
+*Checkout*
+As an unauthenticated user
+I cannot checkout until I have logged in
+
+*View or run as admin*
+As an unauthenticated user
+I cannot view the administrator screen or use the functionality
+
+*Register as an administrator
+As an unauthenticated user 
+I cannot make myself an administrator
+
+******Action available for an authenticated user*******
+*See items*
+As an authenticated user
+I want to browse all items and maybe browse items by category
+so I can find my favourite food
+
+*Add items*
+As an authenticated user
+I can add an item to my cart
+so that I can place my order later after I logged in
+
+*View added items*
+As an authenticated user
+I can view my current added item 
+so that I can preview my cart
+
+*Remove items*
+As an authenticated user
+I can remove any added item
+so that I can change my mind
+
+*Modify added item quantity*
+As an authenticated user
+I can modify the quantity of any added item
+so that I can adjust the order
+
+*Logout*
+As an authenticated user
+I can log out
+so that I can leave the page
+
+*Checkout*
+As an authenticated user
+I can checkout
+so that I can place the order
+
+*Review order history*
+As an authenticated user
+I can view the index of my order history with links to display each order
+so that I can review my data
+
+*Visit order display page*
+As an authenticated user 
+In order display page, I can:
+-view items with quantity ordered and line-item subtotals
+-view links to each item description page
+-view the current status of the order
+-view the order total price
+-view the date/time order was submitted
+-view if the order was completed or cancelled, with a timestamp displayed when that action took place
+-view if any item is retired from the menu:
+	-they can still access the item page
+	-they cannot add it to a new cart
+
+******Action prohibited for an unauthenticated user*******
+*View other user’s data*
+As an authenticated user
+I cannot view another user’s private data
+
+*View or run as admin*
+As an authenticated user
+I cannot view the administrator screen or use the functionality
+
+*Register as an administrator
+As an authenticated user 
+I cannot make myself an administrator
+
+******Action available for an administrators*******
+As an authenticated Administrator, I can: 
+1.Create item listings including a name, description, price, and upload a photo
+2.Modify existing items’ name, description, price, and photo
+3.Create named categories for items (eg: "Small Plates")
+4.Assign items to categories or remove them from categories. Products can belong to more 5.than one category.
+6.Retire a item from being sold, which hides it from browsing by any non-administrator
+7.As an Administrator, I can also view an order "dashboard" where I can:
+
+	-See a listing of all orders with:
+	7.1the total number of orders by status
+	7.2links for each individual order
+	7.3filter orders to display by status type (for statuses "ordered", "paid", "cancelled", "completed")
+	7.4link to transition to a different status:
+		7.4.1link to "cancel" individual orders which are currently "ordered" or "paid"
+		7.4.2link to "mark as paid" orders which are "ordered"
+		7.4.3link to "mark as completed" individual orders which are currently "paid"
+	7.5Access details of an individual order, including:
+		7.5.1rder date and time
+		7.5.2Purchaser full name and email address
+		7.5.3For each item on the order:
+			7.5.3.1Name linked to the item page
+				Quantity
+				Price
+			Line item subtotal
+			Total for the order
+			Status of the order
+
+******Action prohibited for an administrator*******
+
+Modify any personal data aside from their own
