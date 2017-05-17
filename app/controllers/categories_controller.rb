@@ -50,6 +50,7 @@ class CategoriesController < ApplicationController
       end
     end
   end
+  
 
   # DELETE /categories/1
   # DELETE /categories/1.json
